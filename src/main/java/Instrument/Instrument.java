@@ -1,6 +1,8 @@
 package Instrument;
 
-public abstract class Instrument {
+import Shop.ISellable;
+
+public abstract class Instrument implements IPlayable, ISellable {
 
     Material material;
     String brand;
@@ -15,14 +17,25 @@ public abstract class Instrument {
     }
 
     public Material getMaterial() {
-        return material;
+        return this.material;
     }
 
     public String getBrand() {
-        return brand;
+        return this.brand;
     }
 
     public double getUnitCost() {
-        return unitCost;
+        return this.unitCost;
+    }
+    public double getSalePrice() {
+        return salePrice;
+    }
+
+    public void setUnitCost(int unitCost) {
+        this.unitCost = unitCost;
+    }
+
+    public void setSalePrice(int salePrice) {
+        this.salePrice = salePrice;
     }
 }

@@ -31,7 +31,19 @@ public class InstrumentTest {
 
     @Test
     public void hasSalePrice() {
-        assertEquals(200, violin.getUnitCost(), 0.00);
+        assertEquals(350.5, violin.getSalePrice(), 0.00);
+    }
+
+    @Test
+    public void canChangeUnitCost() {
+        violin.setUnitCost(250);
+        assertEquals(250, violin.getUnitCost(), 0.00);
+    }
+
+    @Test
+    public void canChangeSalePrice() {
+        violin.setSalePrice(500);
+        assertEquals(500, violin.getSalePrice(), 0.00);
     }
 
 }

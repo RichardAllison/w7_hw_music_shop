@@ -8,4 +8,8 @@ public class DrumKit extends Percussion {
         super(material, brand, unitCost, salePrice);
     }
 
+    @Override
+    public String play() {
+        return "Lots of noise";
+    }
 }

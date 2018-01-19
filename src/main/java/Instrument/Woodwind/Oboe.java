@@ -5,4 +5,9 @@ public class Oboe extends Woodwind {
     public Oboe(Material material, String brand, double unitCost, double salePrice, int reeds) {
         super(material, brand, unitCost, salePrice, reeds);
     }
+
+    @Override
+    public String play() {
+        return "Oboe noises";
+    }
 }
