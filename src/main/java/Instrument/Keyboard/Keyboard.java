@@ -7,7 +7,11 @@ public abstract class Keyboard extends Instrument {
     int keys;
 
     public Keyboard(Material material, String brand, double unitCost, double salePrice, int keys) {
-        super(material, brand, unitCost, salePrice);
+        super(InstrumentCategory.KEYBOARD, material, brand, unitCost, salePrice);
         this.keys = keys;
+    }
+
+    public int getKeys() {
+        return keys;
     }
 }

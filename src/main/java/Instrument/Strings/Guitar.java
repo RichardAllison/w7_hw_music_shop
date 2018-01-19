@@ -10,6 +10,6 @@ public class Guitar extends Strings {
 
     @Override
     public String play() {
-        return "Guitar noises";
+        return "Albeniz' Asturias";
     }
 }

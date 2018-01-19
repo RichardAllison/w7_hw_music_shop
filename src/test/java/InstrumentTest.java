@@ -11,7 +11,12 @@ public class InstrumentTest {
 
     @Before
     public void before() {
-        violin = new Violin(Material.WOOD, "None", 200.0, 350.50);
+        violin = new Violin(Material.WOOD, "None", 200.0, 350.50, 4);
+    }
+
+    @Test
+    public void hasType() {
+        assertEquals(InstrumentCategory.STRING, violin.getInstrumentType());
     }
 
     @Test

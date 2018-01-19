@@ -1,4 +1,4 @@
 package InstrumentAccessories;
 
-public class Strings {
+public class String {
 }

@@ -5,7 +5,7 @@ import Instrument.*;
 public abstract class Strings extends Instrument {
 
     public Strings(Material material, String brand, double unitCost, double salePrice, int strings) {
-        super(material, brand, unitCost, salePrice);
+        super(InstrumentCategory.STRING, material, brand, unitCost, salePrice);
     }
 
 }

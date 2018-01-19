@@ -4,8 +4,11 @@ import Instrument.Material;
 
 public class DrumKit extends Percussion {
 
-    public DrumKit(Material material, String brand, double unitCost, double salePrice) {
+    int parts;
+
+    public DrumKit(Material material, String brand, double unitCost, double salePrice, int parts) {
         super(material, brand, unitCost, salePrice);
+        this.parts = parts;
     }
 
     @Override

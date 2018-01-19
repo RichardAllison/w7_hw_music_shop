@@ -4,8 +4,8 @@ import Instrument.*;
 
 public class Violin extends Strings {
 
-    public Violin(Material material, String brand, double unitCost, double salePrice) {
-        super(material, brand, unitCost, salePrice, 4);
+    public Violin(Material material, String brand, double unitCost, double salePrice, int strings) {
+        super(material, brand, unitCost, salePrice, strings);
     }
 
     @Override

@@ -2,5 +2,7 @@ package Instrument;
 
 public enum Material {
     WOOD,
-    BRASS;
+    BRASS,
+    METAL,
+    PLASTIC;
 }

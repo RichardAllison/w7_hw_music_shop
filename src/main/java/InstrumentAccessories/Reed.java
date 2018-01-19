@@ -1,4 +1,4 @@
 package InstrumentAccessories;
 
-public class Reeds {
+public class Reed {
 }
