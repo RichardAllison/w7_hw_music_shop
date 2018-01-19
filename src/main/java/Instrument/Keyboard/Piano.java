@@ -1,7 +1,10 @@
 package Instrument.Keyboard;
 
+import Instrument.*;
+
 public class Piano extends Keyboard {
-    public Piano(String material) {
-        super(material);
+
+    public Piano(Material material, String brand, double unitCost, double salePrice, int keys) {
+        super(material, brand, unitCost, salePrice, keys);
     }
 }

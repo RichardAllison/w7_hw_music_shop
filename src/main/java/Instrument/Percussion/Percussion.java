@@ -1,9 +1,11 @@
 package Instrument.Percussion;
 
-import Instrument.Instrument;
+import Instrument.*;
 
 public abstract class Percussion extends Instrument {
-    public Percussion(String material) {
-        super(material);
+
+    public Percussion(Material material, String brand, double unitCost, double salePrice) {
+        super(material, brand, unitCost, salePrice);
     }
+
 }

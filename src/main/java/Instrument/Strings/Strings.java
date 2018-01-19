@@ -1,9 +1,11 @@
 package Instrument.Strings;
 
-import Instrument.Instrument;
+import Instrument.*;
 
 public abstract class Strings extends Instrument {
-    public Strings(String material) {
-        super(material);
+
+    public Strings(Material material, String brand, double unitCost, double salePrice, int strings) {
+        super(material, brand, unitCost, salePrice);
     }
+
 }

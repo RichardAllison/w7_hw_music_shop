@@ -1,7 +1,10 @@
 package Instrument.Strings;
 
+import Instrument.*;
+
 public class Harp extends Strings {
-    public Harp(String material) {
-        super(material);
+
+    public Harp(Material material, String brand, double unitCost, double salePrice, int strings) {
+        super(material, brand, unitCost, salePrice, strings);
     }
 }

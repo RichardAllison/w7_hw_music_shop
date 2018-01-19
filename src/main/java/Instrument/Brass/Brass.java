@@ -1,9 +1,14 @@
 package Instrument.Brass;
 
-import Instrument.Instrument;
+import Instrument.*;
 
 public abstract class Brass extends Instrument {
-    public Brass(String material) {
-        super(material);
+
+    int valves;
+
+    public Brass(Material material, String brand, double unitCost, double salePrice, int valves) {
+        super(material, brand, unitCost, salePrice);
+        this.valves = valves;
     }
+
 }

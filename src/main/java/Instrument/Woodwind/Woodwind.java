@@ -1,9 +1,11 @@
 package Instrument.Woodwind;
 
-import Instrument.Instrument;
+import Instrument.*;
 
 public abstract class Woodwind extends Instrument {
-    public Woodwind(String material) {
-        super(material);
+
+    public Woodwind(Material material, String brand, double unitCost, double salePrice, int reeds) {
+        super(material, brand, unitCost, salePrice);
     }
+
 }

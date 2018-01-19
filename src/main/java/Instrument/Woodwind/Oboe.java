@@ -1,7 +1,8 @@
 package Instrument.Woodwind;
-
+import Instrument.*;
 public class Oboe extends Woodwind {
-    public Oboe(String material) {
-        super(material);
+
+    public Oboe(Material material, String brand, double unitCost, double salePrice, int reeds) {
+        super(material, brand, unitCost, salePrice, reeds);
     }
 }

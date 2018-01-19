@@ -1,7 +1,10 @@
 package Instrument.Strings;
 
+import Instrument.*;
+
 public class Cello extends Strings {
-    public Cello(String material) {
-        super(material);
+
+    public Cello(Material material, String brand, double unitCost, double salePrice, int strings) {
+        super(material, brand, unitCost, salePrice, strings);
     }
 }

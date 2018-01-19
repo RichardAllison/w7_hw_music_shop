@@ -1,7 +1,11 @@
 package Instrument.Percussion;
 
+import Instrument.Material;
+
 public class DrumKit extends Percussion {
-    public DrumKit(String material) {
-        super(material);
+
+    public DrumKit(Material material, String brand, double unitCost, double salePrice) {
+        super(material, brand, unitCost, salePrice);
     }
+
 }
