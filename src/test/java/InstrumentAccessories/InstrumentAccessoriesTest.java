@@ -1,8 +1,9 @@
-import Instrument.*;
+package InstrumentAccessories;
+
 import org.junit.Before;
 import org.junit.Test;
 
-public class AccessoriesTest {
+public class InstrumentAccessoriesTest {
 
     @Before
     public void before() {

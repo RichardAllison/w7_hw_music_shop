@@ -1,12 +1,14 @@
-import Instrument.*;
-import Instrument.Percussion.DrumKit;
+package Instrument.Percussion;
+
+import Instrument.Material;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class PercussionTest {
-    DrumKit drums;
+
+    Percussion drums;
 
     @Before
     public void before() {
@@ -14,7 +16,8 @@ public class PercussionTest {
     }
 
     @Test
-    public void canPlayDrums() {
-        assertEquals("Lots of noise", drums.play());
+    public void drumKitHasMaterial() {
+        assertEquals(Material.PLASTIC, drums.getMaterial());
     }
+
 }

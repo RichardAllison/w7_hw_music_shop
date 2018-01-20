@@ -1,4 +1,5 @@
-import Instrument.*;
+package Instrument;
+
 import Instrument.Strings.Violin;
 import org.junit.Before;
 import org.junit.Test;
@@ -37,6 +38,11 @@ public class InstrumentTest {
     @Test
     public void hasSalePrice() {
         assertEquals(350.5, violin.getSalePrice(), 0.00);
+    }
+
+    @Test
+    public void hasMargin() {
+        assertEquals(150.5, violin.calculateMargin(), 0.0);
     }
 
     @Test

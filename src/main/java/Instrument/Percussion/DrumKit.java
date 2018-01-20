@@ -11,6 +11,10 @@ public class DrumKit extends Percussion {
         this.parts = parts;
     }
 
+    public int getParts() {
+        return parts;
+    }
+
     @Override
     public String play() {
         return "Lots of noise";

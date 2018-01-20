@@ -1,14 +1,12 @@
-package Recordings;
+package Shop;
 
-import Shop.ISellable;
-
-
-public class CD implements ISellable {
+public abstract class Stock implements ISellable {
 
     private double unitCost;
     private double salePrice;
 
-    public CD(double unitCost, double salePrice) {
+
+    public Stock(double unitCost, double salePrice) {
         this.unitCost = unitCost;
         this.salePrice = salePrice;
     }
@@ -16,9 +14,8 @@ public class CD implements ISellable {
     public double getUnitCost() {
         return this.unitCost;
     }
-
     public double getSalePrice() {
-        return this.salePrice;
+        return salePrice;
     }
 
     public void setUnitCost(int unitCost) {

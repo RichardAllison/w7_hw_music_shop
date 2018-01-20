@@ -1,21 +1,18 @@
 package Instrument;
 
-import Shop.ISellable;
+import Shop.*;
 
-public abstract class Instrument implements IPlayable, ISellable {
+public abstract class Instrument extends Stock implements IPlayable, ISellable {
 
-    InstrumentCategory type;
-    Material material;
-    String brand;
-    double unitCost;
-    double salePrice;
+    private InstrumentCategory type;
+    private Material material;
+    private String brand;
 
     public Instrument(InstrumentCategory type, Material material, String brand, double unitCost, double salePrice) {
+        super(unitCost, salePrice);
         this.type = type;
         this.material = material;
         this.brand = brand;
-        this.unitCost = unitCost;
-        this.salePrice = salePrice;
     }
 
     public Material getMaterial() {
@@ -24,25 +21,6 @@ public abstract class Instrument implements IPlayable, ISellable {
 
     public String getBrand() {
         return this.brand;
-    }
-
-    public double getUnitCost() {
-        return this.unitCost;
-    }
-    public double getSalePrice() {
-        return salePrice;
-    }
-
-    public void setUnitCost(int unitCost) {
-        this.unitCost = unitCost;
-    }
-
-    public void setSalePrice(int salePrice) {
-        this.salePrice = salePrice;
-    }
-
-    public double calculateMargin() {
-        return this.salePrice - this.unitCost;
     }
 
     public InstrumentCategory getInstrumentType() {

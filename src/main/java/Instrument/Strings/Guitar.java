@@ -4,12 +4,19 @@ import Instrument.*;
 
 public class Guitar extends Strings {
 
-    public Guitar(Material material, String brand, double unitCost, double salePrice, int strings) {
+    InstrumentKind instrumentKind;
+
+    public Guitar(InstrumentKind instrumentKind, Material material, String brand, double unitCost, double salePrice, int strings) {
         super(material, brand, unitCost, salePrice, strings);
+        this.instrumentKind = instrumentKind;
     }
 
     @Override
     public String play() {
         return "Albeniz' Asturias";
+    }
+
+    public InstrumentKind getKind() {
+        return this.instrumentKind;
     }
 }
