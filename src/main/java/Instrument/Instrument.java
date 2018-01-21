@@ -29,24 +29,26 @@ public abstract class Instrument implements IPlayable, ISellable {
     public InstrumentCategory getInstrumentType() {
         return this.type;
     }
-public double getUnitCost() {
+
+    public double getUnitCost() {
         return this.unitCost;
-        }
-public double getSalePrice() {
+    }
+
+    public double getSalePrice() {
         return salePrice;
-        }
+    }
 
-public void setUnitCost(int unitCost) {
+    public void setUnitCost(int unitCost) {
         this.unitCost = unitCost;
-        }
+    }
 
-public void setSalePrice(int salePrice) {
+    public void setSalePrice(int salePrice) {
         this.salePrice = salePrice;
-        }
+    }
 
-public double calculateMargin() {
+    public double calculateMargin() {
         return this.salePrice - this.unitCost;
-        }
+    }
 }
 
 

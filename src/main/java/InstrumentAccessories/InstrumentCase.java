@@ -1,7 +1,5 @@
 package InstrumentAccessories;
 
-import Instrument.Strings.Violin;
-
 public class InstrumentCase<T extends Instrument.Instrument > extends InstrumentAccessory {
 
     private T instrument;
