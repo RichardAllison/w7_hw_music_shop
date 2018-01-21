@@ -3,33 +3,22 @@ package Recordings;
 import Shop.ISellable;
 
 
-public class CD implements ISellable {
+public class CD extends Recording {
 
-    private double unitCost;
-    private double salePrice;
+    private String artist;
+    private int tracks;
 
-    public CD(double unitCost, double salePrice) {
-        this.unitCost = unitCost;
-        this.salePrice = salePrice;
+    public CD(String title, String artist, int tracks, double unitCost, double salePrice) {
+        super(title, unitCost, salePrice);
+        this.artist = artist;
+        this.tracks = tracks;
     }
 
-    public double getUnitCost() {
-        return this.unitCost;
+    public String getArtist() {
+        return this.artist;
     }
 
-    public double getSalePrice() {
-        return this.salePrice;
-    }
-
-    public void setUnitCost(int unitCost) {
-        this.unitCost = unitCost;
-    }
-
-    public void setSalePrice(int salePrice) {
-        this.salePrice = salePrice;
-    }
-
-    public double calculateMargin() {
-        return this.salePrice - this.unitCost;
+    public int getTracks() {
+        return this.tracks;
     }
 }

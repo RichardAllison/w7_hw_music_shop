@@ -2,13 +2,13 @@ package InstrumentAccessories;
 
 import Shop.ISellable;
 
-public abstract class InstrumentAccessories implements ISellable {
+public abstract class InstrumentAccessory implements ISellable {
 
     private String description;
     private double unitCost;
     private double salePrice;
 
-    public InstrumentAccessories(String description, double unitCost, double salePrice) {
+    public InstrumentAccessory(String description, double unitCost, double salePrice) {
         this.description = description;
         this.unitCost = unitCost;
         this.salePrice = salePrice;
@@ -17,6 +17,7 @@ public abstract class InstrumentAccessories implements ISellable {
     public double getUnitCost() {
         return this.unitCost;
     }
+
     public double getSalePrice() {
         return salePrice;
     }
@@ -31,5 +32,9 @@ public abstract class InstrumentAccessories implements ISellable {
 
     public double calculateMargin() {
         return this.salePrice - this.unitCost;
+    }
+
+    public String getDescription() {
+        return this.description;
     }
 }
