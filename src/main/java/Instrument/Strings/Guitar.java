@@ -13,7 +13,7 @@ public class Guitar extends Strings {
 
     @Override
     public String play() {
-        return "Albeniz' Asturias";
+        return "Guitar noises";
     }
 
     public InstrumentKind getKind() {

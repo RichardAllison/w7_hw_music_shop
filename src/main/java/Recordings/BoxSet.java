@@ -2,12 +2,12 @@ package Recordings;
 
 import java.util.ArrayList;
 
-public class BoxSet<T extends Recording> extends Recording {
+public class BoxSet extends Recording {
 
 
-    private ArrayList<T> contents;
+    private ArrayList<Recording> contents;
 
-    public BoxSet(String title, ArrayList<T> contents, double unitCost, double salePrice) {
+    public BoxSet(String title, ArrayList<Recording> contents, double unitCost, double salePrice) {
         super(title, unitCost, salePrice);
         this.contents = contents;
     }
@@ -16,7 +16,7 @@ public class BoxSet<T extends Recording> extends Recording {
         return this.contents.size();
     }
 
-    public ArrayList<T> getContents() {
+    public ArrayList<Recording> getContents() {
         return this.contents;
     }
 }

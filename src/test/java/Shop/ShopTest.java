@@ -4,6 +4,7 @@ import Instrument.*;
 import Instrument.Keyboard.Piano;
 import Instrument.Strings.Violin;
 import InstrumentAccessories.InstrumentCase;
+import Recordings.CD;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,6 +16,7 @@ public class ShopTest {
     Violin violin;
     Piano piano;
     InstrumentCase<Violin> instrumentCase;
+    CD cd;
 
     @Before
     public void before() {
@@ -22,6 +24,7 @@ public class ShopTest {
         violin = new Violin(Material.WOOD, "None", 200.0, 350.50, 4);
         piano = new Piano(Material.WOOD,"Bösendorfer", 8000, 10000, 88);
         instrumentCase = new InstrumentCase<>("Violin case", 40, 60);
+        cd = new CD("Title", "Artist", 12, 5, 10);
     }
 
     @Test
@@ -40,7 +43,8 @@ public class ShopTest {
     public void canAddDifferentSellableTypesToStock() {
         shop.addToStock(violin);
         shop.addToStock(instrumentCase);
-        assertEquals(2, shop.getStockCount());
+        shop.addToStock(cd);
+        assertEquals(3, shop.getStockCount());
         assertEquals(instrumentCase, shop.getStock().get(1));
     }
 
